@@ -1,4 +1,4 @@
-import { getDatabase, ref, push, onChildAdded } from "https://www.gstatic.com/firebasejs/10.2.0/firebase-database.js";
+import { getDatabase, ref, push, onChildAdded, remove} from "https://www.gstatic.com/firebasejs/10.2.0/firebase-database.js";
 
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.2.0/firebase-app.js";
@@ -37,6 +37,17 @@ onChildAdded(messagesRef, snapshot => {
     const messageElement = document.createElement('div');
     messageElement.innerText = `${message.sender}: ${message.message}`;
     messagesDiv.appendChild(messageElement);
+
+    setTimeout(() => {
+      const messageKey = snapshot.key;
+      if (messageKey) {
+        const messageRef = ref(getDatabase(), `messages/${messageKey}`);
+        remove(messageRef);
+        messageElement.remove();
+      }
+    }, 5000);
 });
+
+
 
   
