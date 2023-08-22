@@ -1,11 +1,10 @@
 const firebaseConfig = {
-    apiKey: 'your-api-key',
-    authDomain: 'your-auth-domain',
-    databaseURL: 'your-database-url',
-    projectId: 'your-project-id',
-    storageBucket: 'your-storage-bucket',
-    messagingSenderId: 'your-messaging-sender-id',
-    appId: 'your-app-id'
+    apiKey: "AIzaSyAv0Lxx9QN-8ZtqOZP-3XGCqiw8p2-2U9w",
+    authDomain: "communication-2e28a.firebaseapp.com",
+    projectId: "communication-2e28a",
+    storageBucket: "communication-2e28a.appspot.com",
+    messagingSenderId: "119743742814",
+    appId: "1:119743742814:web:c5a825b8e834d153c385cf"
   };
   
   firebase.initializeApp(firebaseConfig);
