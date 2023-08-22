@@ -1,6 +1,7 @@
 {
   "name": "a-secure-and-private-communication-platform-with-multi-layered-protection",
   "version": "1.0.0",
+  "homepage": "https://gitname.github.io/react-gh-pages",
   "description": "",
   "main": "app.js",
   "scripts": {

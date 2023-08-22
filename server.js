@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const admin = require('firebase-admin');
 
-const serviceAccount = require("D:\\A Secure and Private Communication Platform with Multi-Layered Protection\\communication-2e28a-firebase-adminsdk-6o8fk-893daaf2ea.json"); // Replace with your own service account key
+const serviceAccount = require("communication-2e28a-firebase-adminsdk-6o8fk-893daaf2ea.json"); // Replace with your own service account key
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
