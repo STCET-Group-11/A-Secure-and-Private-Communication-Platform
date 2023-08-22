@@ -4,13 +4,33 @@
   <title>Simple Chat App</title>
   <script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js" type="module"></script>
   <script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-database.js" type="module"></script>
+  <link rel="icon" href="./chaticon.ico" />
+  <link rel="stylesheet" href="./style.css">
+
+  <style>
+    h1{
+      text-align: center;
+    }
+    .message{
+      text-align: center;
+      padding-bottom: 10px;
+    }
+  </style>
 </head>
 <body>
   <h1>Simple Chat App</h1>
   <div id="chat">
-    <div id="messages"></div>
-    <input type="text" id="message" placeholder="Type a message">
-    <button id="send">Send</button>
+    <div class="message" id="messages"></div>
+    <div class="container">
+      <div class="container__item">
+        <form class="form">
+          <input type="text" id="message" class="form__field" placeholder="Your Text" />
+          <button type="button" id="send" class="btn btn--primary btn--inside uppercase" >Send</button>
+        </form>
+      </div>
+    </div>
+    <!-- <input type="text" id="message" placeholder="Type a message">
+    <button id="send">Send</button> -->
   </div>
   <script src="app.js" type="module"></script>
 </body>
